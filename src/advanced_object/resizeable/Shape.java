@@ -1,7 +1,7 @@
-package ke_thua.he_cac_doi_tuong_hinh_hoc;
+package advanced_object.resizeable;
 
-public abstract class Shape {
-    private String color="green";
+public class Shape {
+    protected String color="green";
     private boolean filled=true;
 
     public Shape() {
@@ -27,5 +27,12 @@ public abstract class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
-    public abstract double getArea();
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
+    }
 }

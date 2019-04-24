@@ -1,4 +1,4 @@
-package ke_thua.he_cac_doi_tuong_hinh_hoc;
+package advanced_object.colorable;
 
 public abstract class Shape {
     private String color="green";

@@ -1,6 +1,6 @@
-package ke_thua.he_cac_doi_tuong_hinh_hoc;
+package advanced_object.comparator;
 
-public abstract class Shape {
+public class Shape {
     private String color="green";
     private boolean filled=true;
 
@@ -27,5 +27,12 @@ public abstract class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
-    public abstract double getArea();
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
+    }
 }
