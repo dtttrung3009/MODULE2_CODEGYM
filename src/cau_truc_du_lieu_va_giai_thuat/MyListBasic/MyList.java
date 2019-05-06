@@ -1,15 +1,13 @@
 package cau_truc_du_lieu_va_giai_thuat.MyListBasic;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-
 public class MyList<E> {
     private int size;
     private final int DEFAULT_CAPACITY=18;
     private Object elements[];
-    public MyList<E> cloneArray(MyList<E> list){
+    public MyList<E> cloneArray(){
         MyList<E> v = new MyList<>();
-        v.elements = Arrays.copyOf(list.elements,list.size());
+        v.size = size;
+        v.elements = Arrays.copyOf(elements,size);
        return v;
     }
 

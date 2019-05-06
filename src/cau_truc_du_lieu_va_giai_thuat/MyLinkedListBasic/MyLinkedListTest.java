@@ -16,6 +16,10 @@ public class MyLinkedListTest {
         System.out.println("Number of node "+ll.size());
         ll.remove(4);
         ll.printList();
+        MyLinkedList<Integer> cloneData;
+        cloneData= ll.clone();
+        System.out.println("Sau khi clone thu được:");
+        cloneData.printList();
         ll.clear();
         System.out.println("Sau khi xóa");
         ll.printList();

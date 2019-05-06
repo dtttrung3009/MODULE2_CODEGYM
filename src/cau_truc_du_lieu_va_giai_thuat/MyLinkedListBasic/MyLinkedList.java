@@ -1,5 +1,7 @@
 package cau_truc_du_lieu_va_giai_thuat.MyLinkedListBasic;
 
+import java.util.LinkedList;
+
 public class MyLinkedList<E> {
     private Node head;
     private Node tail;
@@ -20,6 +22,15 @@ public class MyLinkedList<E> {
 
     public MyLinkedList(Object data) {
         head = new Node(data);
+    }
+    public MyLinkedList<E> clone(){
+        MyLinkedList<E> myLinkedListClone = new MyLinkedList<>(head);
+        Node current=head;
+        while(current!=null){
+            myLinkedListClone.addLast((E) current.data);
+            current=current.next;
+        }
+        return myLinkedListClone;
     }
 
     public void add(int index, E data) {

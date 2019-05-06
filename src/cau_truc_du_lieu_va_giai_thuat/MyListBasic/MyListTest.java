@@ -1,11 +1,5 @@
 package cau_truc_du_lieu_va_giai_thuat.MyListBasic;
 
-import cau_truc_du_lieu_va_giai_thuat.Customer;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-
 public class MyListTest {
     public static void main(String[] args) {
         MyList<Integer> listInteger = new MyList<>();
@@ -27,9 +21,11 @@ public class MyListTest {
         System.out.println(listInteger.contains(3));
         System.out.println("Vị trí đầu tiên của phần tử 8");
         System.out.println(listInteger.indexOf(8));
-//        System.out.println("Sau khi xóa");
-//        listInteger.clear();
-        MyList<Integer> copyArray= listInteger.cloneArray(listInteger);
+        System.out.println("Clone arrayList: ");
+        MyList<Integer> copyArray= listInteger.cloneArray();
         copyArray.printList();
+        System.out.println("Sau khi xóa");
+        listInteger.clear();
+
     }
 }
