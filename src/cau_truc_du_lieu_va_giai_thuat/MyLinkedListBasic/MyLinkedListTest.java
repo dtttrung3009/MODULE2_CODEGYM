@@ -13,6 +13,7 @@ public class MyLinkedListTest {
         ll.add(4,8);
         ll.addLast(5);
         ll.printList();
+        System.out.println("Vị trí 3 là "+ll.get(2));
         System.out.println("Number of node "+ll.size());
         ll.remove(4);
         ll.printList();

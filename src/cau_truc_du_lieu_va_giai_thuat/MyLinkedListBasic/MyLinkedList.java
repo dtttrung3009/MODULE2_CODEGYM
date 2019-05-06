@@ -66,12 +66,12 @@ public class MyLinkedList<E> {
         numNodes++;
     }
 
-    public Node get(int index) {
+    public E get(int index) {
         Node temp = head;
         for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
-        return temp;
+        return (E) temp.getData();
     }
 
     public void printList() {

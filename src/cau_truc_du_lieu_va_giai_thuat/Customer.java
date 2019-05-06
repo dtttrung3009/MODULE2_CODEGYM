@@ -4,7 +4,7 @@ public class Customer {
     private String name;
     private int age;
 
-    public Customer(String name, int age) {
+    public Customer(String name, String s, int age) {
         this.name = name;
         this.age = age;
     }
